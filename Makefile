@@ -3,7 +3,7 @@
 
 PROGRAM ?= clic-hardware-vector-interrupts
 
-override CFLAGS += -Xlinker --defsym=__stack_size=0x800 -DMETAL_CLIC_VECTORED
+override CFLAGS += -Xlinker --defsym=__stack_size=0x800
 
 $(PROGRAM): $(wildcard *.c) $(wildcard *.h) $(wildcard *.S)
 
